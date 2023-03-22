@@ -13,9 +13,6 @@ def encode(code):
             continue
     return int("".join(map(str, digits)))
 
-def decode():
-    pass
-
 if __name__ == "__main__":
     encoder = True
     while encoder:
