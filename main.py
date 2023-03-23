@@ -13,6 +13,15 @@ def encode(code):
             continue
     return int("".join(map(str, digits)))
 
+def decode(code):
+    output = ''
+    for i in code:
+        new_value = ((int(i)+10)-3) % 10
+
+        output += str(new_value)
+    return output
+
+
 if __name__ == "__main__":
     encoder = True
     while encoder:
